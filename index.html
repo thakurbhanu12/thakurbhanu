@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tour of India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b0b2b; /* A very dark blue */
+            background-image: radial-gradient(circle, #1a1a4d, #0b0b2b);
+            color: #e9ecef; /* Light text for contrast */
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden; /* Prevents horizontal scrollbar */      }
+
+        /* Starry background effect */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(white 1px, transparent 1px),
+                              radial-gradient(white 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1;
+            z-index: -1;
+            animation: move-stars 200s linear infinite;
+        }
+
+        @keyframes move-stars {
+            from { background-position: 0 0; }
+            to { background-position: 2000px 2000px; }
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            backdrop-filter: blur(5px);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #f7f9fc;
+            font-size: 2em;
+            border-left: 5px solid #6c5ce7;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #c0c0d0;
+        }
+
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-left: 4px solid #6c5ce7;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        li:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateX(5px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Tour of India: The City of Dreams, Mumbai</h1>
+        <p>
+            Welcome to a virtual journey through some of India's most captivating places. We'll start with a general overview of the country, then focus on the vibrant state of Maharashtra, and finally dive deep into the heart of its capital city, Mumbai.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tourist Places in India</h2>
+            <p>
+                India is a land of incredible diversity, with a rich history and culture that spans thousands of years. It's a country of stark contrasts, where ancient traditions coexist with modern technology. Tourists are drawn to India for its iconic landmarks like the Taj Mahal, the ancient forts of Rajasthan, and the serene backwaters of Kerala. The country's spiritual heritage is also a major draw, with numerous pilgrimage sites for various religions. Beyond the historical and spiritual sites, India's natural beauty is breathtaking, from the majestic Himalayan mountain range in the north to the tropical beaches and dense forests in the south.
+            </p>
+            <p>
+                The culinary landscape is just as diverse as its geography, offering a wide array of flavors and regional specialties. From the spicy curries of the south to the rich tandoori dishes of the north, every region tells a story through its food. India is truly a feast for all the senses. One of the most diverse and culturally rich states is Maharashtra, which we will explore next.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Tourist Places in Maharashtra</h2>
+            <p>
+                Maharashtra, located in the western part of India, is a state known for its beautiful coastline, historic forts, and vibrant cities. It is a state that beautifully blends tradition with modernity. The state is home to a number of UNESCO World Heritage Sites, most notably the stunning cave temples of **Ajanta and Ellora**, which showcase intricate rock-cut sculptures and ancient murals.
+            </p>
+            <p>
+                The state's landscape is varied, featuring the picturesque hills of the Western Ghats, the bustling urban centers like Pune and Nagpur, and the scenic beaches along the Konkan coast. Maharashtra's rich history is reflected in its numerous forts, such as the famous **Raigad Fort** and **Shivneri Fort**, which played a crucial role in the history of the Maratha Empire. Among its many vibrant cities, Mumbai stands out as a global hub of commerce and entertainment.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Tourist Places in Mumbai</h2>
+            <p>
+                Mumbai, the capital of Maharashtra, is often called the "City of Dreams." It's a city that never sleeps, known for its dynamic energy, Bollywood film industry, and iconic landmarks. Mumbai is a melting pot of cultures, and its fast-paced life is a major draw for people from all over the country. The city's food scene is legendary, from its famous street food like Vada Pav and Pav Bhaji to high-end restaurants. The colonial-era architecture stands in stunning contrast to the modern skyscrapers.
+            </p>
+            <p>
+                Here are four of the most popular tourist places to visit in Mumbai. Each of these places offers a unique glimpse into the soul of the city.
+            </p>
+            <ul>
+                <li><a href="gateway.html">The Gateway of India</a></li>
+                <li><a href="marine-drive.html">Marine Drive</a></li>
+                <li><a href="siddhivinayak.html">Shree Siddhivinayak Ganapati Temple</a></li>
+                <li><a href="csmt.html">Chhatrapati Shivaji Maharaj Terminus (CSMT)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025  Thakur Bhanu Pratap Singh<br> CLASS - 10<SUP>TH</SUP><br>Roll No.--&gt15</p>
+    </footer>
+
+</body>
+</html>
